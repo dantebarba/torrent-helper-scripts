@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk --no-cache add ca-certificates jq curl git dcron dcron tzdata && git clone https://github.com/Jorman/Scripts.git
+RUN apk --no-cache add ca-certificates bash jq curl git dcron dcron tzdata && git clone https://github.com/Jorman/Scripts.git
 
 COPY cron.sh /cron.sh
 
