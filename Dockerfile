@@ -16,6 +16,11 @@ ENV CRON='* * * * *'
 ENV CMD='echo Running Script'
 ENV OPTS=''
 
+ENV QBT_HOST='http://qbittorrent'
+ENV QBT_USERNAME='admin'
+ENV QBT_PASSWORD='adminadmin'
+ENV QBT_PORT='8080'
+
 ENTRYPOINT ["/cron.sh"]
 
 CMD [""]

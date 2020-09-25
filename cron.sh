@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 
+
+sed -i "/qbt_host=/c${QBT_HOST}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_port=/c${QBT_PORT}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_username=/c${QBT_USERNAME}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_password=/c${QBT_PASSWORD}" /Scripts/AddqBittorrentTrackers.sh;
+
 if [ -z "$CRON" ]
   then
     echo "INFO: No CRON setting found. Running autoremove once."
