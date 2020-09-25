@@ -20,6 +20,7 @@ ENV QBT_HOST='http://qbittorrent'
 ENV QBT_USERNAME='admin'
 ENV QBT_PASSWORD='adminadmin'
 ENV QBT_PORT='8080'
+ENV TRACKER_LIST_URL='https://ngosang.github.io/trackerslist/trackers_all.txt'
 
 ENTRYPOINT ["/cron.sh"]
 
