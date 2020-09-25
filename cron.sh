@@ -5,7 +5,7 @@ sed -i "/qbt_host=/cqbt_host=${QBT_HOST}" /Scripts/AddqBittorrentTrackers.sh;
 sed -i "/qbt_port=/cqbt_port=${QBT_PORT}" /Scripts/AddqBittorrentTrackers.sh;
 sed -i "/qbt_username=/cqbt_username=${QBT_USERNAME}" /Scripts/AddqBittorrentTrackers.sh;
 sed -i "/qbt_password=/cqbt_password=${QBT_PASSWORD}" /Scripts/AddqBittorrentTrackers.sh;
-sed -i "/live_trackers_list_url=/clive_trackers_list_url=${TRACKER_LIST_URL}"
+sed -i "/live_trackers_list_url=/clive_trackers_list_url='${TRACKER_LIST_URL}'";
 
 if [ -z "$CRON" ]
   then
