@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 
-sed -i "/qbt_host=/c${QBT_HOST}" /Scripts/AddqBittorrentTrackers.sh;
-sed -i "/qbt_port=/c${QBT_PORT}" /Scripts/AddqBittorrentTrackers.sh;
-sed -i "/qbt_username=/c${QBT_USERNAME}" /Scripts/AddqBittorrentTrackers.sh;
-sed -i "/qbt_password=/c${QBT_PASSWORD}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_host=/c/qbt_host=${QBT_HOST}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_port=/c/qbt_port=${QBT_PORT}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_username=/c/qbt_username=${QBT_USERNAME}" /Scripts/AddqBittorrentTrackers.sh;
+sed -i "/qbt_password=/c/qbt_password=${QBT_PASSWORD}" /Scripts/AddqBittorrentTrackers.sh;
 
 if [ -z "$CRON" ]
   then
